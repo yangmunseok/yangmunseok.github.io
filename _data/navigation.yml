@@ -4,6 +4,37 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+
+docs:
+  - title: Programming
+    children:
+      - title: "Algorithm"
+        url: /docs/algorithm/
+      - title: "Computer Science"
+        url: /docs/computer-science/
+      - title: "Project"
+        url: /docs/project/
+
+  - title: Chess
+    children:
+      - title: "Theory"
+        url: /docs/theory/
+      - title: "Classic"
+        url: /docs/classic/
+      - title: "Modern"
+        url: /docs/modern/
+      - title: "Book Review"
+        url: /docs/book-review/
+      - title: "My Game"
+        url: /docs/my-game/
+
+  - title: Extras
+    children:
+      - title: "External Activities"
+        url: /docs/external-activities/
+      - title: "chat"
+        url: /docs/chat/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
