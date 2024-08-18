@@ -312,10 +312,10 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _all
   - scope:
       path: ""
-      type: posts
+      type:
     values:
       layout: single
       author_profile: true
@@ -323,3 +323,5 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: "docs"
