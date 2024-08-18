@@ -315,11 +315,9 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: docs
+      type: posts
     values:
       layout: single
-      sidebar:
-        nav: "docs"
       author_profile: true
       read_time: true
       comments: true
