@@ -315,7 +315,6 @@ defaults:
   # _all
   - scope:
       path: ""
-      type:
     values:
       layout: single
       author_profile: true
