@@ -5,35 +5,35 @@ main:
   - title: "Tags"
     url: /tags/
 
-docs:
+sidemenu:
   - title: Programming
     children:
       - title: "Algorithm"
-        url: /docs/algorithm/
+        url: /algorithm/
       - title: "Computer Science"
-        url: /docs/computer-science/
+        url: /computer-science/
       - title: "Project"
-        url: /docs/project/
+        url: /project/
 
   - title: Chess
     children:
       - title: "Theory"
-        url: /docs/theory/
+        url: /theory/
       - title: "Classic"
-        url: /docs/classic/
+        url: /classic/
       - title: "Modern"
-        url: /docs/modern/
+        url: /modern/
       - title: "Book Review"
-        url: /docs/book-review/
+        url: /book-review/
       - title: "My Game"
-        url: /docs/my-game/
+        url: /my-game/
 
   - title: Extras
     children:
       - title: "External Activities"
-        url: /docs/external-activities/
+        url: /external-activities/
       - title: "chat"
-        url: /docs/chat/
+        url: /chat/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
