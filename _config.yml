@@ -116,7 +116,7 @@ author:
   name             : "Yang,munseok"
   avatar           : "/images/MyAvatar.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  location         : "Suwon, Korea"
   email            :
   links:
     - label: "Email"
@@ -133,7 +133,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/yangmunseok"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
