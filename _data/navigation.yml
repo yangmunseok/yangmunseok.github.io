@@ -21,10 +21,6 @@ sidemenu:
         url: /theory/
       - title: "Classic"
         url: /classic/
-      - title: "Modern"
-        url: /modern/
-      - title: "Book Review"
-        url: /book-review/
       - title: "My Game"
         url: /my-game/
 
@@ -32,6 +28,8 @@ sidemenu:
     children:
       - title: "External Activities"
         url: /external-activities/
+      - title: "Book Review"
+        url: /book-review/
       - title: "chat"
         url: /chat/
 
