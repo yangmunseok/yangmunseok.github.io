@@ -1,7 +1,8 @@
 ---
 title: "Algorithm"
-layout: home
+layout: category
 permalink: /algorithm/
+taxonomy: Algorithm
 author_profile: true
 sidebar_main: true
 sidebar:
