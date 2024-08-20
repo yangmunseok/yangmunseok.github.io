@@ -1,7 +1,7 @@
 ---
 title: "Chat"
 layout: category
-permalink: /chat/
+permalink: /categories/chat/
 taxonomy: Chat
 author_profile: true
 sidebar_main: true
