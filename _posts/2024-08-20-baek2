@@ -1,0 +1,98 @@
+---
+layout: single
+title:  "[백준] 15686. 치킨 배(c++)"
+categories:
+  - Algorithm
+---
+
+[문제링크](https://www.acmicpc.net/problem/15686)
+
+구현문제이다.
+위의 문제를 단계별로 나눠서 코딩을 진행하면 된다.
+
+##1. 치킨집 중에서 m개를 고르는 모든 경우의 수를 구하기
+##2. 모든 경우에서 치킨 거리를 구하기
+##3. 구한 치킨 거리중 최단 거리를 구하기.
+
+최단 거리는 priority queue를 이용해서 구했다.
+
+```c++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <queue>
+#include <cmath>
+
+using namespace std;
+
+void combination(const vector<vector<int>>& city, const vector<pair<int, int>>& chicken, const int& m, const int& cur, const int& total);
+
+priority_queue<int, vector<int>, greater<int>> Q;
+
+int main()
+{
+	cin.tie(NULL);
+	ios_base::sync_with_stdio(false);
+
+	int n, m;
+	cin >> n >> m;
+
+	vector<vector<int>> city(n + 1, vector<int>(n + 1));
+	vector<pair<int, int>> chicken;
+
+	for (int i = 1; i < n + 1; i++)
+	{
+		for (int j = 1; j < n + 1; j++)
+		{
+			cin >> city[i][j];
+			if (city[i][j] == 2)
+			{
+				chicken.push_back({ i,j });
+			}
+		}
+	}
+
+	combination(city, chicken, m, 0, chicken.size());
+
+	cout << Q.top();
+}
+
+void combination(const vector<vector<int>>& city, const vector<pair<int, int>>& chicken,const int& m, const int& cur, const int& total)
+{
+	static vector<bool> selected(total, false);
+
+	if (m == 0)
+	{
+		int sum = 0;
+
+		for (int i = 0; i < city.size(); i++)
+		{
+			for (int j = 0; j < city.size(); j++)
+			{
+				if (city[i][j] == 1)
+				{
+					int minimum = 1000;
+					for (int k = 0; k < total; k++)
+					{
+						if (selected[k])
+						{
+							minimum = min(minimum, abs(i - chicken[k].first) + abs(j - chicken[k].second));
+						}
+					}
+					sum += minimum;
+				}
+			}
+		}
+
+		Q.push(sum);
+	}
+
+	for (int i = cur; i < total; i++)
+	{
+		selected[i] = true;
+		combination(city, chicken, m - 1, i + 1, total);
+		selected[i] = false;
+	}
+
+}
+```
