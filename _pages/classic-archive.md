@@ -1,7 +1,7 @@
 ---
 title: "Classic"
 layout: category
-permalink: /classic/
+permalink: /categories/classic/
 taxonomy: Classic
 author_profile: true
 sidebar_main: true
