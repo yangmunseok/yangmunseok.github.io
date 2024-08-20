@@ -9,29 +9,29 @@ sidemenu:
   - title: Programming
     children:
       - title: "Algorithm"
-        url: /algorithm/
+        url: /categories/algorithm/
       - title: "Computer Science"
-        url: /computer-science/
+        url: /categories/computer-science/
       - title: "Project"
-        url: /project/
+        url: /categories/project/
 
   - title: Chess
     children:
       - title: "Theory"
-        url: /theory/
+        url: /categories/theory/
       - title: "Classic"
-        url: /classic/
+        url: /categories/classic/
       - title: "My Game"
-        url: /my-game/
+        url: /categories/my-game/
 
   - title: Extras
     children:
       - title: "External Activities"
-        url: /external-activities/
+        url: /categories/external-activities/
       - title: "Book Review"
-        url: /book-review/
+        url: /categories/book-review/
       - title: "chat"
-        url: /chat/
+        url: /categories/chat/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
