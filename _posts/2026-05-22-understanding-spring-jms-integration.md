@@ -14,8 +14,6 @@ JMS의 기능은 크게 메시지의 **생성(Production)**과 **소비(Consumpt
 *   **메시지 리스너 컨테이너(Message-Listener Containers)**: 비동기 방식의 메시지 수신을 위해 사용됩니다. Jakarta EE의 MDB(Message-Driven Bean) 스타일과 유사하게 **MDP(Message-Driven POJO)**를 생성할 수 있게 해줍니다.
 *   **선언적 리스너**: `@JmsListener` 어노테이션을 사용하여 선언적인 방식으로 메시지 리스너를 간단하게 구현할 수 있습니다.
 
----
-
 ## 2. 주요 패키지별 기능 요약
 
 Spring JMS는 용도에 따라 여러 패키지로 나뉘어 정교한 기능을 제공합니다.
@@ -40,8 +38,6 @@ JMS 네임스페이스에 대한 파서 구현과 리스너 엔드포인트 생�
 
 ### 📍 org.springframework.jms.connection
 독립형 애플리케이션에서 사용할 수 있는 `ConnectionFactory` 구현체를 제공합니다. 특히 **`JmsTransactionManager`**가 이 패키지에 포함되어 있는데, 이를 통해 JMS를 Spring의 트랜잭션 관리 메커니즘에 원활하게 통합할 수 있습니다.
-
----
 
 ## 3. Spring JMS의 설계 철학
 
