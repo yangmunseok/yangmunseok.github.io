@@ -9,8 +9,6 @@ tags: ["TCP/IP", "CCNA", "Network", "OSI Model", "Protocol"]
 
 이 글에서는 복잡한 네트워크 동작 과정을 계층별로 나누어 정리한 **TCP/IP 모델**을 중심으로, 데이터가 어떻게 전달되는지 그 원리를 살펴보겠습니다.
 
----
-
 ## 1. 프로토콜과 표준의 중요성
 
 **프로토콜(Protocol)**은 네트워크 상에서 장치들이 통신하기 위해 지켜야 하는 '약속' 또는 '규칙'입니다. 컴퓨터가 사용하는 언어라고 생각하면 쉽습니다.
@@ -20,8 +18,6 @@ tags: ["TCP/IP", "CCNA", "Network", "OSI Model", "Protocol"]
 ### 주요 표준 기구
 - **IEEE (Institute of Electrical and Electronics Engineers):** LAN 기술(Ethernet - 802.3, Wi-Fi - 802.11)과 같은 물리적, 하위 계층 표준을 정의합니다.
 - **IETF (Internet Engineering Task Force):** TCP, IP, HTTP, DNS 등 인터넷에서 사용되는 대부분의 상위 프로토콜을 정의하며, 이를 **RFC(Request for Comments)**라는 문서로 공개합니다.
-
----
 
 ## 2. TCP/IP 모델의 5계층 구조
 
@@ -51,8 +47,6 @@ tags: ["TCP/IP", "CCNA", "Network", "OSI Model", "Protocol"]
 - **역할:** 데이터를 전기적, 광학적, 또는 무선 신호로 변환하여 실제 매체(케이블, 공기 등)를 통해 전송합니다.
 - **주요 요소:** 이더넷 케이블, 광섬유, NIC(랜카드) 등.
 
----
-
 ## 3. 데이터 캡슐화와 역캡슐화
 
 데이터가 네트워크를 통해 전달될 때는 각 계층을 지나면서 필요한 정보가 덧붙여지거나 제거됩니다.
@@ -67,8 +61,6 @@ tags: ["TCP/IP", "CCNA", "Network", "OSI Model", "Protocol"]
 ### 역캡슐화 (Decapsulation)
 수신 호스트에서 데이터를 받으면 상위 계층으로 올리면서 헤더를 하나씩 제거하고 최종적으로 원래의 데이터만 남기는 과정입니다.
 
----
-
 ## 4. PDU (Protocol Data Unit) 요약
 
 각 계층에서 취급하는 데이터 단위(PDU)의 이름은 다음과 같습니다. 이 용어들은 네트워크 엔지니어 간의 대화에서 매우 중요합니다.
@@ -80,8 +72,6 @@ tags: ["TCP/IP", "CCNA", "Network", "OSI Model", "Protocol"]
 | **Layer 2** | 프레임(Frame) | MAC 주소 |
 | **Layer 1** | 비트(Bits) | - |
 
----
-
 ## 5. TCP/IP vs OSI 모델
 
 네트워크를 공부하다 보면 **OSI 7계층 모델**도 접하게 됩니다. 
@@ -90,8 +80,6 @@ tags: ["TCP/IP", "CCNA", "Network", "OSI Model", "Protocol"]
 - **TCP/IP 모델:** 실무에서 실제로 사용되는 프로토콜 스택입니다.
 
 실무에서는 TCP/IP의 상위 3계층(세션, 표현, 응용)을 하나로 묶어 '애플리케이션 계층'으로 부르는 경우가 많으며, 이를 OSI 모델의 번호를 빌려와 **Layer 7**이라고 부르기도 합니다.
-
----
 
 ## 마치며
 
